@@ -6,21 +6,26 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
+config_version=5
 
 [application]
 
 config/name="Achievement Manager"
 run/main_scene="res://demo/Control.tscn"
+config/features=PackedStringArray("4.0")
 config/icon="res://addons/gd-achievements/icon.png"
 
 [autoload]
 
 AchievementManager="*res://addons/gd-achievements/scripts/achievement_manager.gd"
 
+[dotnet]
+
+project/assembly_name="Achievement Manager"
+
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/gd-achievements/plugin.cfg" )
+enabled=PackedStringArray("res://addons/gd-achievements/plugin.cfg")
 
 [importer_defaults]
 

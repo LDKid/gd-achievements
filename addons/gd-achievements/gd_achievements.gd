@@ -1,5 +1,5 @@
 # Main addon script, that loads nodes we need
-tool
+@tool
 
 extends EditorPlugin
 
